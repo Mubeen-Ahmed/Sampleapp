@@ -1,0 +1,8 @@
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 20px;
+}
+#card-color:hover {
+    background-color: steelblue;
+}

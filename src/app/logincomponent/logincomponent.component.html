@@ -1,0 +1,30 @@
+<div class="center">
+  <div class="card" style="width:500px">
+    <div class="card text-center">
+      <div class="card-header" style="padding:20px" id="card-color">
+        <img class="card-img-top" src="assets/Images/employee.png" alt="Card image" style="width:25%" class="rounded-circle">
+        <!--<span>Employee Login</span><-->
+      </div>
+    </div>
+    <div class="card-body">
+      <div>
+
+        <form class="form-horizontal" (ngSubmit)="formSubmit()">
+          <div style="margin-bottom: 25px" class="form-group">
+            <input type="text" class="form-control" name="username" value="" placeholder="username" [(ngModel)]="data.username">
+          </div>
+
+          <div style="margin-bottom: 25px" class="form-group">
+            <input id="login-password" type="password" class="form-control" name="password" placeholder="password" [(ngModel)]="data.password">
+          </div>
+
+          <button class="btn btn-primary" [routerLink]="success">Login</button>
+
+        </form>
+
+
+
+      </div>
+    </div>
+  </div>
+</div>
